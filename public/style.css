@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,400&display=swap');
+body {
+    background-image: url("/office-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#date {
+    margin-top: 45px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.6em;
+}
+
+section {
+    text-align: center;
+    margin: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#s1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#s2 {
+    font-size: 7em;
+    font-weight: bolder;
+    color: white;
+}
+
+#s3 {
+    margin: 10px auto;
+    display: inline-block;
+    color: white;
+    font-size: 3em;
+}
+
+#s4 {
+    color: white;
+    font-size: 2.5em;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.homebtn {
+    border: 2px solid rgba(187, 0, 204, 0.904);
+    border-radius: 4px;
+    padding: 6px;
+    font-size: large;
+    margin: 10px;
+    text-decoration: none;
+    background-color: rgba(1, 6, 77, 0.932);
+    box-shadow: 0px 5px 10px black;
+    color: white;
+    display: inline-block;
+    transition: 800ms;
+    width: 10%;
+}
+
+.homebtn:hover {
+    transform: scale(1.1, 1.09);
+    transition: 300ms;
+    background-color: rgba(187, 0, 204, 0.904);
+    border: 2px solid darkblue;
+}
+
+.sub-btn {
+    border: 2px solid rgba(187, 0, 204, 0.904);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: larger;
+    margin: 10px;
+    text-decoration: none;
+    background-color: rgba(1, 6, 77, 0.932);
+    box-shadow: 0px 5px 10px black;
+    color: white;
+    display: inline-block;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.sub-btn:hover {
+    transform: scale(1.1, 1.09);
+    transition: 500ms;
+    background-color: rgba(173, 0, 189, 0.932);
+    border: 2px solid darkblue;
+}
+
+strong {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#r1 {
+    margin-bottom: 10px;
+}
+
+.forscroll {
+    max-height: 75vh;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+
+/* user data table */
+
+table {
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.568);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+tr {
+    padding-top: 20px;
+}
+
+th {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+tr:first-child>th {
+    border-bottom: 1px solid black;
+}
+
+th:last-child {
+    text-align: center;
+}
+
+th:nth-child(5),
+th:nth-child(6),
+th:nth-child(4) {
+    text-align: center;
+}
+
+.check-section {
+    margin: 5px auto;
+    width: 40%;
+    background: rgba(255, 255, 255, 0.568);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#inform {
+    margin: 20px;
+}
+
+#currTime {
+    color: black;
+    font-size: 2em;
+    color: rgb(128, 255, 0);
+    text-shadow: 0px 3px 5px rgb(73, 0, 102);
+    white-space: nowrap;
+    background: none;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+}
+
+input {
+    box-sizing: border-box;
+    width: 50%;
+    border-radius: 3px;
+    outline: none;
+    border: 2px solid purple;
+}
+
+#pop {
+    color: rgb(236, 0, 0);
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+@media (max-width: 1000px) {
+    body {
+        overflow-y: scroll;
+        min-height: 101vh;
+    }
+    .homebtn {
+        width: max-content;
+        font-size: small;
+    }
+    #s1 {
+        font-size: 3em;
+    }
+    #s2 {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        overflow-y: scroll;
+        min-height: 101vh;
+    }
+    .homebtn {
+        width: max-content;
+        font-size: small;
+    }
+    #s1 {
+        font-size: 2em;
+    }
+    #s2 {
+        font-size: 4em;
+    }
+    input {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .check-section {
+        width: 80%;
+    }
+}

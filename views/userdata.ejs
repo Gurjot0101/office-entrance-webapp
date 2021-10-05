@@ -1,0 +1,55 @@
+<%-include("./partials/head")%>
+
+
+
+    <section class='home-section'>
+        <span id="s3">Office Employees DATA</span>
+        <br>
+        <div class="forscroll">
+            <table>
+                <tr>
+                    <th><strong>Name</strong></th>
+                    <th><strong>Email-ID</strong></th>
+                    <th><strong>Phone No.</strong></th>
+                    <th><strong>Date</strong></th>
+                    <th><strong>Check-IN Time</strong></th>
+                    <th><strong>Check-OUT Time</strong></th>
+                    <th><strong>Current Status</strong></th>
+                </tr>
+
+                <% for( let d of data ){%>
+                    <tr>
+                        <th>
+                            <%= d.name %>
+                        </th>
+                        <th>
+                            <%= d.email %>
+                        </th>
+                        <th>
+                            <%= d.phone %>
+                        </th>
+                        <th>
+                            <%= d.date %>
+                        </th>
+                        <th>
+                            <%= d.time_i %>
+                        </th>
+                        <th>
+                            <%= d.time_o %>
+                        </th>
+                        <th>
+                            <%= d.status %>
+                        </th>
+                    </tr>
+
+                    <%}%>
+            </table>
+        </div>
+
+
+
+        <a class="homebtn" href="/home">Go to Home</a>
+    </section>
+    </body>
+
+    </html>

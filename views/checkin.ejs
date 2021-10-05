@@ -1,0 +1,45 @@
+<%-include("./partials/head")%>
+
+    <div id="s4">Fill to Check-IN</div>
+    <section>
+
+        <br>
+        <div class='check-section'>
+            <span id="pop"><%= e %> </span>
+            <form action="/home" method="POST">
+                <div id="inform">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" placeholder="Enter name">
+                </div>
+                <div id="inform">
+                    <label for="email">Email-ID: </label>
+                    <input type="email" name="email" placeholder="Enter your Email-ID">
+                </div>
+                <div id="inform">
+                    <label for="phone">Phone No: </label>
+                    <input type="number" name="phone" placeholder="Enter your Phone number" required>
+                </div>
+                <div id="inform">
+                    <label for="date">Date: </label>
+                    <input type="date" name="date" required>
+                </div>
+                <div id="inform">
+                    <label for="time">Check-IN Time: </label>
+                    <br>
+                    <input id="currTime" name="time" type="text" readonly></input>
+                </div>
+
+                <button class="sub-btn" type="submit">Submit</button>
+
+            </form>
+        </div>
+
+        <a class="homebtn" href="/home">Go to Home</a>
+    </section>
+
+
+
+    <script src="/time.js" async defer></script>
+    </body>
+
+    </html>
