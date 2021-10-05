@@ -60,7 +60,7 @@ app.post('/home', async(req, res) => {
     } else {
 
         //email funcion
-        // entermail(name, email, time);
+        entermail(name, email, time);
 
         const time_i = time;
 
@@ -96,7 +96,7 @@ app.put('/home', async(req, res) => {
         }
 
         //email funcion
-        // exitmail(nam, mail, time);
+        exitmail(nam, mail, time);
 
         const to = time;
 
